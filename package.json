@@ -1,0 +1,6 @@
+{
+  "name": "enviro",
+  "author": "Zack Bloom <zackbloom@gmail.com>",
+  "version": "0.3.0",
+  "main": "./env"
+}
