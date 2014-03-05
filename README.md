@@ -17,12 +17,9 @@ Env.getInternal('api') # Will return local, qa, or prod
 ```
 #### On The Frontend
 ```coffeescript
-hubspot.require ['enviro'], (Env) ->
+Enviro.get('usage_tracking')
 
-  Env.get('usage_tracking')
-  
-  # Set with window.USAGE_TRACKING_ENV or localStorage.USAGE_TRACKING_ENV
-  # If neither is defined, it will use hubspot.server.env
+# Set with window.USAGE_TRACKING_ENV or localStorage.USAGE_TRACKING_ENV
 ```
 
 #### Functions

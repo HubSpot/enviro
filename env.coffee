@@ -66,7 +66,7 @@ denormalize = (env) ->
 # just ENV (or NODE_ENV on the server), then default to 'qa'.
 #
 # STATIC and API are two services which you might want to
-# override to control which static and HubSpot APIs you
+# override to control which static and APIs you
 # are talking to.
 #
 # To maintain compatibility with other node libs, you should
