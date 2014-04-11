@@ -97,7 +97,7 @@ getInternal = (service, def) ->
 getShort = getInternal
 
 deployed = (service, def) ->
-  getEnv("#{ service.toUpperCase() }_DEPLOYED") ? getEnv('DEPLOYED')
+  getEnv("#{ service.toUpperCase() }_DEPLOYED") ? getEnv('DEPLOYED') ? (getEnv('NODE_ENV') is 'production')
 
 debug = (service, def) ->
   getEnv("#{ service.toUpperCase() }_DEBUG") ? getEnv('DEBUG') ? false
